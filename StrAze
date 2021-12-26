@@ -1,3 +1,7 @@
+do
+	local NO_R7HMA = game:GetService("CoreGui"):FindFirstChild("NO_R7HMA")
+	if imgui then imgui:Destroy() end
+end
 
 local NO_R7HMA = Instance.new("ScreenGui")
 local NO_R7HMAframe = Instance.new("Frame")
@@ -30,7 +34,7 @@ local UICorner_11 = Instance.new("UICorner")
 --Properties:
 
 NO_R7HMA.Name = "NO_R7HMA"
-NO_R7HMA.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+NO_R7HMA.Parent = game:GetService("CoreGui")
 NO_R7HMA.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 NO_R7HMA.ResetOnSpawn = false
 
